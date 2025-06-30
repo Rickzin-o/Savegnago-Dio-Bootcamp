@@ -1,7 +1,9 @@
-const nomeInput = document.querySelector("#nome-heroi")
-const expInput = document.querySelector("#xp-heroi")
+const conteudo = document.querySelector("#content")
+const conteudoHtml = conteudo.innerHTML
 
 function classificar() {
+    const nomeInput = document.querySelector("#nome-heroi")
+    const expInput = document.querySelector("#xp-heroi")
     let nome = nomeInput.value
     let exp = expInput.value
     if (nome == "" || exp == "") {
@@ -28,7 +30,8 @@ function classificar() {
         nivel = "Ascendente"
     }
 
-    alert(`O herói ${nome} é nível ${nivel}!`)
+    let resultsHtml = `<div id="results-container"><h2 id="resultado">O nível de ${nome} é...</h2><p id="nivel-heroi">${nivel}</p></div>`
+    conteudo.innerHTML = conteudoHtml + resultsHtml
 
     nomeInput.value = ""
     expInput.value = ""
