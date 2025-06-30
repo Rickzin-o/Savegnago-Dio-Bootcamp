@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
 body {
+    font: 1rem 'Rubik', sans-serif;
     margin: 0;
 }
 
@@ -24,12 +27,14 @@ footer {
 }
 
 #inputs-container {
+    background-color: antiquewhite;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    max-width: 30vw;
-    height: 100%;
-    margin: auto;
+    max-width: 25vw;
+    margin: 1rem auto;
+    padding: 3rem;
+    border-radius: 1rem;
     gap: 0.5rem;
 }
 
@@ -43,4 +48,28 @@ button {
     padding: 0.5rem;
     margin: 0 auto;
     cursor: pointer;
+}
+
+#results-container {
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 25vw;
+    margin: 1rem auto;
+    padding: 3rem;
+    border-radius: 1rem;
+    gap: 1rem;
+}
+
+#results-container h2 {
+    margin: 0;
+    font-weight: bold;
+}
+
+#results-container p {
+    margin: 0;
+    font-size: 3rem;
+    font-weight: bold;
 }
