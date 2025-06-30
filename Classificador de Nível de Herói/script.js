@@ -13,21 +13,21 @@ function classificar() {
 
     let nivel = ""
     if (exp <= 1000) {
-        nivel = "Ferro"
+        nivel = "FERRO"
     } else if (exp <= 2000) {
-        nivel = "Bronze"
+        nivel = "BRONZE"
     } else if (exp <= 5000) {
-        nivel = "Prata"
+        nivel = "PRATA"
     } else if (exp <= 8000) {
-        nivel = "Ouro"
+        nivel = "OURO"
     } else if (exp <= 11000) {
-        nivel = "Platina"
+        nivel = "PLATINA"
     } else if (exp <= 15000) {
-        nivel = "Radiante"
+        nivel = "RADIANTE"
     } else if (exp <= 20000) {
-        nivel = "Imortal"
+        nivel = "IMORTAL"
     } else {
-        nivel = "Ascendente"
+        nivel = "ASCENDENTE"
     }
 
     let resultsHtml = `<div id="results-container"><h2 id="resultado">O nível de ${nome} é...</h2><p id="nivel-heroi">${nivel}</p></div>`
